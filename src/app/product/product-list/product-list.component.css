@@ -1,0 +1,30 @@
+.card {
+  max-width: 100%;
+  min-width: 100%;
+  border: 1px solid #e6e6e6;
+  border-radius: 0;
+  margin-bottom: 0.8rem;
+}
+
+.card-title a {
+  color: #262626 !important;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.card-text,
+.card-title {
+  padding: 2px !important;
+  margin: 1px !important;
+}
+
+.card-text {
+  color: #404040;
+}
+
+.card-title a:hover {
+  text-decoration: underline;
+}
