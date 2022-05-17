@@ -1,9 +1,11 @@
 <div class="row">
   <!-- column -->
+
   <div *ngFor="let product of products; index as i" class="col-lg-4">
     <!-- card -->
     <div class="card" style="width: 18rem">
       <div class="card-body">
+        <img src="{{ product.image_url }}" style="width: 100%" alt="" />
         <h5 class="card-title">
           <a href="https://www.google.ca"> {{ product.name }} </a>
         </h5>
