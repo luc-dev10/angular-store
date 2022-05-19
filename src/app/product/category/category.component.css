@@ -21,7 +21,16 @@
 /* cat item */
 .cat-item p {
   margin: 0;
-  padding: 1rem 1.5rem;
+  padding: 1rem 0 0 0.5rem;
+}
+
+.cat-item input {
+  margin-top: 0.6rem;
+  padding: 14px;
+  border-radius: 0;
+}
+
+.cat-item p {
   color: #595959;
   font-size: 0.9rem;
 }
