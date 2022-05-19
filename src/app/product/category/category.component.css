@@ -1,0 +1,27 @@
+.cat-container {
+  background-color: #fdfdfd;
+  border-color: #f4f4f4 !important;
+  padding: 1rem 1.5rem;
+}
+
+/* cat title */
+.cat-title p {
+  margin-bottom: 0;
+}
+
+.cat-title i {
+  cursor: pointer;
+}
+
+/* cat items */
+.cat-items {
+  margin-top: 1rem;
+}
+
+/* cat item */
+.cat-item p {
+  margin: 0;
+  padding: 1rem 1.5rem;
+  color: #595959;
+  font-size: 0.9rem;
+}

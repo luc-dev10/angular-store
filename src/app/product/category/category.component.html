@@ -1,1 +1,35 @@
-<p>category works!</p>
+<div class="border cat-container">
+  <!-- Title -->
+  <div class="cat-title d-flex">
+    <p class="text-p">Categories</p>
+    <div class="ms-auto">
+      <i
+        [ngClass]="isExpanded ? 'fa-minus' : 'fa-plus'"
+        class="fa-solid text-p"
+        (click)="expendedOnClick()"
+      ></i>
+    </div>
+  </div>
+
+  <!-- items -->
+  <div [ngClass]="{ hidden: !isExpanded }" class="cat-items">
+    <!-- Equipment -->
+    <div class="cat-item">
+      <div>
+        <p>Equipment</p>
+      </div>
+    </div>
+    <!-- Gear -->
+    <div class="cat-item">
+      <div>
+        <p>Gear</p>
+      </div>
+    </div>
+    <!-- Cleaning -->
+    <div class="cat-item">
+      <div>
+        <p>Cleaning</p>
+      </div>
+    </div>
+  </div>
+</div>
