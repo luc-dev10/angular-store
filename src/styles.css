@@ -8,3 +8,7 @@
 .text-p {
   color: #00001a;
 }
+
+.hidden {
+  display: none;
+}
