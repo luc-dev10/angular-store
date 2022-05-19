@@ -6,7 +6,17 @@
 /* text */
 
 .text-p {
-  color: #00001a;
+  color: #00001a !important;
+}
+
+/* bg colors */
+.bg-light {
+  background-color: #fdfdfd !important;
+}
+
+/* border */
+.border-color-p {
+  border-color: #ededed !important;
 }
 
 .hidden {
