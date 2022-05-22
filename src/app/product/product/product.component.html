@@ -2,7 +2,12 @@
   <!-- flexbox -->
   <div class="row">
     <!-- category - flex item -->
-    <div class="col-md-3"><app-category></app-category></div>
+    <div class="col-md-3">
+      <app-category
+        [categories]="categories"
+        (emmitOnChange)="changeOnCategory($event)"
+      ></app-category>
+    </div>
     <!-- product list - flex item -->
     <div class="col-md-9">
       <h1 class="display-6 product-header text-p">Products</h1>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { Category } from 'src/app/model/category';
 
 @Component({
   selector: 'app-category',
@@ -6,14 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./category.component.css'],
 })
 export class CategoryComponent implements OnInit {
+  @Input() categories: Category[] | undefined;
+  @Output() emmitOnChange = new EventEmitter<Event>();
+
+  isExpanded: boolean = true;
+
   constructor() {}
 
   ngOnInit(): void {}
 
-  isExpanded: boolean = true;
-
   // methods
   expendedOnClick() {
     this.isExpanded = !this.isExpanded;
+  }
+
+  categoryOnChange(event: Event) {
+    this.emmitOnChange.emit(event);
   }
 }

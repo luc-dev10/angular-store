@@ -18,8 +18,8 @@
       <input
         class="form-check-input"
         type="checkbox"
-        value=""
-        id="flexCheckChecked"
+        name="Equipment"
+        (change)="categoryOnChange($event)"
         checked
       />
       <p>Equipment</p>
@@ -29,8 +29,8 @@
       <input
         class="form-check-input"
         type="checkbox"
-        value=""
-        id="flexCheckChecked"
+        name="Gear"
+        (change)="categoryOnChange($event)"
         checked
       />
       <p>Gear</p>
@@ -40,8 +40,8 @@
       <input
         class="form-check-input"
         type="checkbox"
-        value=""
-        id="flexCheckChecked"
+        name="Cleaning"
+        (change)="categoryOnChange($event)"
         checked
       />
       <p>Cleaning</p>
